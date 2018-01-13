@@ -1,0 +1,82 @@
+.zoom-field { height: 15%; }
+
+.creation-field { height: 25%; }
+
+.zoom-field p, .partitioning-field p, #width-indicator, #height-indicator {
+    display: inline-block;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.partitioning-field p { margin-left: 10%; }
+
+#zoom-switch, #partitioning-switch {
+    margin-left: 10%;
+    vertical-align: middle;
+}
+
+#px-indicator {
+    float: right;
+    margin-left: 0;
+    margin-right: 15%;
+}
+
+#width-indicator, #height-indicator { margin: 0 0 0 7.5%; }
+
+#slider-px {
+    display: none;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#slider-width, #slider-height {
+    width: 60%;
+    margin-top: 7.5%;
+    margin-left: 10%;
+}
+
+.new-puzzle-field {
+	width: 50%;
+	height: 25%;
+	margin-top: 7.5%;
+    margin-left: 20%;
+}
+
+#color-picker {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    height: 40%;
+}
+
+.color-preview-field {
+    display: inline-block;
+    position: relative;
+    margin: 3% 1.5% 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.color-preview-field input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.color-preview {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.color-preview-field input:checked ~ .color-preview { border: 3px solid black; }

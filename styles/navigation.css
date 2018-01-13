@@ -1,0 +1,89 @@
+#file-input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.file-select {
+    margin-top: 3%;
+    margin-left: 25%;
+	width: 50%;
+	height: 5%;
+}
+
+#drop-zone {
+	width: 90%;
+	height: 10%;
+    margin-top: 3%;
+    margin-left: 5%;
+    cursor: auto;
+	border: 3px dashed deepskyblue;
+	border-radius: 15px;
+}
+
+#puzzle-list {
+    height: 72.5%;
+	margin-top: 4%;
+	margin-bottom: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+#puzzle-list li {
+    position: relative;
+	width: 80%;
+	left: 5%;
+    padding: 12px 8px 12px 40px;
+    text-align: center;
+	font-size: 18px;
+	transition: 0.2s;
+    user-select: none;
+    cursor: pointer;
+    list-style-type: none;
+    background: #eee;
+}
+
+#puzzle-list li:hover { background: #ddd; }
+
+#puzzle-list li.checked {
+	background: #888;
+	color: #fff;
+}
+
+.close-button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+}
+
+.close-button:hover {
+	background-color: #f44336;
+	color: white;
+}
+
+.navigate-button {
+	margin: 0 10% 0;
+	padding: 1.5% 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+	background-color: white;
+}
+
+#navigation-bar {
+	display: none;
+	margin-top: 4%;
+	justify-content: center;
+}
+
+#tab-indicator {
+	margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}

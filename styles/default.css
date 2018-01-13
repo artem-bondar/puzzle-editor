@@ -1,0 +1,64 @@
+body { margin: 0; }
+
+header, footer {
+	text-align: center;
+	background-color: mediumturquoise;
+}
+
+header > p, footer > p {
+	line-height: 3.5vh;
+	margin: 0;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+.view, .column, #puzzle-view {
+	height: 93vh;
+}
+
+.column {
+	float: left;
+	width: 25%;
+	background-color: steelblue;
+}
+
+#puzzle-view {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	width: 50%;
+	background-color: lightcyan;
+}
+
+#puzzle-grid {
+	margin: 1vw;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+.primitive {
+	box-sizing: border-box;
+	border: 1px solid black;
+	background-color: white;
+}
+
+.text-field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: bold;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	border: 2px solid deepskyblue;
+	border-radius: 10px;
+	color: black;
+	background-color: white;
+}
+
+.file-select:hover, .navigate-button:hover, .new-puzzle-field:hover {
+    background-color: deepskyblue;
+    color: white;
+}

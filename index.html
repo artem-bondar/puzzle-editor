@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Puzzle Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/templates.css">
+  <link rel="stylesheet" href="styles/settings.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <link rel="icon" href="images/favicon.jpg">
+  <script src="scripts/interface.js"></script>
+  <script src="scripts/handlers.js"></script>
+  <script src="scripts/calculations.js"></script>
+</head>
+
+<body>
+  <header>
+    <p>Web puzzle editor for Equalide Game</p>
+  </header>
+
+  <div class="view">
+    <div class="column">
+      <div class="partitioning-field">
+        <p>Partitioning</p>
+        <label class="switch" id="partitioning-switch">
+          <input type="checkbox" onchange="handlePartitioningSwitch()" checked>
+          <span class="switch-slider"></span>
+        </label>
+      </div>
+
+      <div class="zoom-field">
+        <p>Zoom</p>
+        <label class="switch" id="zoom-switch">
+          <input type="checkbox" onchange="handleZoomSwitch()" id="zoom-checkbox" checked>
+          <span class="switch-slider"></span>
+        </label>
+        <p id="px-indicator"></p>
+        <div class="slider-container" id="slider-px">
+          <input type="range" min="25" max="125" value="75" class="slider" id="range-px">
+        </div>
+      </div>
+
+      <div class="creation-field">
+        <div class="slider-container" id="slider-width">
+          <input type="range" min="1" max="15" value="5" class="slider" id="range-width">
+        </div>
+        <p id="width-indicator">5w</p>
+        <div class="slider-container" id="slider-height">
+          <input type="range" min="1" max="20" value="5" class="slider" id="range-height">
+        </div>
+        <p id="height-indicator">5h</p>
+        <label class="new-puzzle-field text-field" onclick="createNewPuzzle()">new puzzle</label>
+      </div>
+
+      <div id="color-picker"></div>
+    </div>
+
+    <div id="puzzle-view">
+      <table id="puzzle-grid"></table>
+    </div>
+
+    <div class="column">
+      <input type="file" id="file-input" multiple>
+      <label for="file-input" class="file-select text-field">choose puzzles</label>
+      <div class="text-field" id="drop-zone">or drop them here</div>
+      <ul id="puzzle-list"></ul>
+      <div id="navigation-bar">
+        <button class="navigate-button" onclick="loadTab('left')">&lt;</button>
+        <p id="tab-indicator"></p>
+        <button class="navigate-button" onclick="loadTab('right')">&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Equalide &copy; 2K18</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
