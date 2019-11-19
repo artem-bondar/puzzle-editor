@@ -1,18 +1,20 @@
-Веб-страница - средство для удобного просмотра любой по размеру базы пазлов и попиксельного редактирования пазла.
+# Puzzle editor
+
+Web page - a tool for convenient viewing of puzzle database of any size and pixel editing of puzzles.
 
 ## Features
 
-- Загрузка пазлов из файла (от 1 до ~2M+ пазлов в файле)
-- Поддержка CR+LF/LF окончаний файлов
-- Масштабирование пазла
-- Включение и выключение отображения разбиения
-- Вкладочная навигация по загруженным пазлам (1К пазлов на вкладку)
-- Создание пустого пазла с заданным размером
+- Loading puzzles from file (from 1 to ~2M+ puzzles in file)
+- Support CR+LF/LF file endings
+- Scaling of puzzle
+- Turning of partition on/of
+- Tab navigation through loaded puzzles (1K puzzles per tab)
+- Creating of empty puzzle with given dimensions
 
 ## Puzzle format
 
-- Один пазл под другим через пустую строку.
-- Окончание строки однородное по всему файлу.
+- One puzzle under another through an empty string
+- The end of the line is uniform throughout the file.
 
 ```
 010
@@ -25,10 +27,14 @@
 ```
 
 ## Hotkeys
-- **Стрелочка влево** - предыдущая вкладка пазлов
-- **Стрелочка вправо** - следующая вкладка пазлов
-- **Стрелочка вверх** - загрузка предыдущего пазла
-- **Стрелочка вниз** - загрузка следующего пазла
-- **Delete** - удалить выбранный пазл
-- **0** - выбрать белый цвет
-- **1-9** - выбор цвета примитива
+- **Left arrow** - previous puzzles tab
+- **Right arrow** - next puzzles tab
+- **Up arrow** - loading of previous puzzle
+- **Down arrow** - loading of next puzzle
+- **Delete** - delete selected puzzle
+- **0** - select white color
+- **1-9** - select color of primitive
+
+## Screenshot
+
+![editor](docs/images/editor.png)
