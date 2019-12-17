@@ -16,7 +16,7 @@ Web page - a tool for convenient viewing of puzzle database of any size and pixe
 - One puzzle under another through an empty string
 - The end of the line is uniform throughout the file.
 
-```
+```txt
 010
 111
 010
@@ -27,6 +27,7 @@ Web page - a tool for convenient viewing of puzzle database of any size and pixe
 ```
 
 ## Hotkeys
+
 - **Left arrow** - previous puzzles tab
 - **Right arrow** - next puzzles tab
 - **Up arrow** - loading of previous puzzle
